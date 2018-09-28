@@ -1,0 +1,239 @@
+@font-face{
+    font-family:"florentia";
+    src:url("fonte/Florentia-thin-trial.ttf");
+}
+.clearfix{
+    clear: both;
+}
+body{
+    font-family:"florentia", sans-serif;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.barra_superior{
+    border-bottom: 1px solid rgb(204, 204, 204);
+    color: rgb(187, 187, 187);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+.container{
+    max-width:960px;
+    width: 100%;
+    margin: 0 auto;
+}
+nav {
+    color: rgb(187, 187, 187);
+    font-size: 12px;
+    float:right;
+    margin-top:50px;
+    }
+    
+nav a{
+    color: rgb(187, 187, 187);
+    text-decoration: nome;
+    }
+nav a.btnDestaque{
+    margin-left: 25px;
+    
+}
+.btnDestaque{
+    background-color: rgb(255,77,77);
+    color:white;
+    padding: 12px 40px;
+    border-radius: 3px;
+    font-size: 12px;
+    text-decoration:none;
+    
+    }
+.sec01{
+    background-color: rgb(149,165,120);
+    height: 400px;
+    color: white;
+    background-image: url(../img/home.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sec01 p{
+    font-size: 24px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+}
+.sec01 p.titulo{
+    font-size: 30px;
+    padding-top: 100px;
+}
+.sec02{
+   
+}
+.sec02 p{
+    font-size: 26px;
+    text-align: center;
+}
+.sec02 img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 960px;
+}
+.sec03 {
+    
+    height: 400px;
+}
+.sec03 p{
+    font-size: 30px;
+    line-height: 120%;
+    color: rgb(102,102,102);
+    padding-top: 70px;
+    padding-left: 40px;
+}
+.largura40{
+    background-color: rgb(239,202,95);
+    width: 40%;
+    float: left;
+    height: 400px;
+}
+.largura60{
+    width: 60%;
+    float: left;
+    background-image: url(../img/home2.jpg);
+    background-position: right;
+    height: 400px;
+}
+.direito_reservado{
+    background-color:  rgb(255,77,77);
+    color:white;
+    text-align: center;
+    padding-top:25px;
+    padding-bottom:30px ;
+}
+.direito_reservado p{
+    margin-top: 30px;
+}
+.direito_reservado a{
+    color: white;
+}
+.um_terco{
+    margin-right: 3px;
+    width: 33%;
+    float: left;
+}
+.logo{
+    width: 200px;
+    height: 100px;
+}
+.h1{
+    font-weight: bold;
+    font-size:25px;
+    line-height: 1,2;
+    margin-top: 30px;
+}
+.um_terco p{
+    line-height: 15px;
+}
+/* intex.html-^  v-faleconosco.html*/
+.fale_conosco{
+    height:300px; 
+    background-color: rgb(230,230,230);
+    width: 50%;
+    float: left;
+    line-height: 150%;
+    padding-top: 50px;
+}
+.fale_conosco form{
+    line-height: 250%;
+}
+.fale_conosco form input[type=text], textarea, .modal input[type=text]{
+    border: none;
+    border-bottom: 1px solid lightgray;
+    background-color: rgb(230,230,230);
+    width: 70%;
+    padding: 5px;
+}
+.fale_conosco textarea{
+    min-height: 100px;
+}
+.fale_conosco input[type=text]{
+    float: right;
+}
+.fale_conosco p{
+    margin: 0px;
+    line-height: 30px;
+}
+
+@media screen and (min-width=561px) end (max-width=1366px){
+    /*tablet, porem min-width é 481 e não 561!!*/
+    
+}
+
+/* v-celular max-width é 480 e não 560!!*/
+@media screen and (max-width: 560px){
+    .barra_superior .container{
+        margin-left: 10px;
+    }
+    .logo {
+        width: 80%;
+    }
+    nav{
+        float: none;
+    }
+    .sec01 p, .sec01 . btnDestaque{
+        margin-left: 10px;
+    }
+    .largura60{
+        width: 40%;
+            background-image: url(../img/home2movel.jpg);
+
+    }
+    .largura40{
+        width: 60%;
+    }
+    .rede{
+        text-align: center;
+    }
+    .um_terco{
+        background-color: rgb(230,230,230);
+        float:none;
+        width: 100%;
+        padding-bottom: 1px;
+        padding-top: 1px;
+        border-bottom: 1px solid white;
+    }
+    .btnDestaque{
+        
+        padding: 10px;
+    }
+    .um_terco p{
+        font-size: 17px;
+        line-height:2px;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed; /* absolut = fica no lugar que vc colocar
+                        fixed = acompanha conforme vc move a tela*/
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    top: 50%;
+    margin-top:-100px;/* pra deixar no meio da tela top=50% e desce a metade do height com o margin-top=-(heigth/2)*/
+    left: 50%;
+    margin-left: -200px;
+    padding:20px;
+    border-radius: 4px;
+}
+.modal input[type=text]{
+    width: 95%;
+    margin-bottom: 30px;
+}
+.modal a{
+    float: right;
+    font-size: 24px;
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+}
