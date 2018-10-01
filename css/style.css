@@ -237,3 +237,8 @@ nav a.btnDestaque{
     color:black;
     cursor: pointer;
 }
+.nao_valido{
+    color: red;
+    border-bottom:1px solid red;
+    display:none;
+}
